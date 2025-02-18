@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Movie Reviewer, a place to comment and review movies">
     <title>{% block title %}Document{% endblock %}</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
     <div>{% block content %} {% endblock %}</div>
+    <footer>{% block footer %} Copyrights {% endblock %}</footer>
 </body>
 </html>
